@@ -3,64 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommers Website</title>
+    <title>Flex box</title>
     <style>
-        .flex_container{
-         background-color: brown;
-         display:flex;
-         flex-wrap: wrap;
-         justify-content: flex-end;
+       :root{
+         --primary-color:darkgreen;
+       }
+        .containers{
+            display: flex;
+            background-color: var(--primary-color,darkgreen);
+            box-shadow: 5px 12px red;
+            :hover{
+                background-image: url(./osmans.jpg);
+            }
+
+          flex-wrap: wrap;
         }
-        .flex_container>div{
-            font-size: 35px;
-            margin: 20px;
-            padding: 15px;
-            width: 100px;
-            background-color: darkgreen;
-            text-align: center;
-            z-index: 5px;
-          
-           
+        .card{
+            border: 2px solid green;
+            width: 300px;
+            margin: 10px;
+            padding: 5px;
+            background-color: aqua;
+
         }
-        .flex_container:hover{
-            color:aqua;
-            background-image: url(./pic2.jpg);
-            background-repeat: 50%;
-            background: image 30%;;
+        .img-card{
+            width:100%;
+
         }
     </style>
-</head>
+  </head>
 <body>
-   <div class="flex_container">
+    <div class="containers">
+        <div class="card">
+            <div class="body">
+              <img class="img-card" src="./formal.jpg" alt=" My image">
+            </div>
+           
+            <div class="title">
+                <h1>Python Programming</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod in quia molestias quaerat cupiditate, excepturi dolores delectus, vitae aut sit ex tempora fugit dolore ducimus sed nostrum quam! Tenetur fugiat eligendi, optio nisi aperiam vero temporibus facere non hic quibusdam accusamus veritatis aliquid, officia unde soluta fuga consequatur. Sapiente, dignissimos?</p>
+            </div>
+           </div>
 
-    <div class="div1">
-        div1
+           <div class="card">
+            <div class="body">
+              <img class="img-card" src="./formal.jpg" alt=" My image">
+            </div>
+           
+            <div class="title">
+                <h1>Python Programming</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod in quia molestias quaerat cupiditate, excepturi dolores delectus, vitae aut sit ex tempora fugit dolore ducimus sed nostrum quam! Tenetur fugiat eligendi, optio nisi aperiam vero temporibus facere non hic quibusdam accusamus veritatis aliquid, officia unde soluta fuga consequatur. Sapiente, dignissimos?</p>
+            </div>
+           </div>
+           <div class="card">
+            <div class="body">
+              <img class="img-card" src="./formal.jpg" alt=" My image">
+            </div>
+           
+            <div class="title">
+                <h1>Python Programming</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod in quia molestias quaerat cupiditate, excepturi dolores delectus, vitae aut sit ex tempora fugit dolore ducimus sed nostrum quam! Tenetur fugiat eligendi, optio nisi aperiam vero temporibus facere non hic quibusdam accusamus veritatis aliquid, officia unde soluta fuga consequatur. Sapiente, dignissimos?</p>
+            </div>
+           </div>
+           <div class="card">
+            <div class="body">
+              <img class="img-card" src="./formal.jpg" alt=" My image">
+            </div>
+           
+            <div class="title">
+                <h1>Python Programming</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod in quia molestias quaerat cupiditate, excepturi dolores delectus, vitae aut sit ex tempora fugit dolore ducimus sed nostrum quam! Tenetur fugiat eligendi, optio nisi aperiam vero temporibus facere non hic quibusdam accusamus veritatis aliquid, officia unde soluta fuga consequatur. Sapiente, dignissimos?</p>
+            </div>
+           </div>
     </div>
-    <div class="div2">
-        div2
-    </div>
-    <div class="div3">
-        div3
-    </div>
-    <div class="div4">
-        div4
-    </div>
-
-  
-
-        <div class="div5">
-            div5
-        </div>
-        <div class="div6">
-            div6
-        </div>
-        <div class="div7">
-            div7
-        </div>
-        <div class="div8">
-            div8
-        </div>
-
-   </div>
+   
+       
 </body>
 </html>
